@@ -1,9 +1,9 @@
 import React from 'react'
-function Joke(){
+function Joke(props){
     return(
         <div>
-            <h2>Question: </h2>
-            <p>Answer:</p>
+            <h2>{props.question} </h2>
+            <p>{props.punchLine}</p>
             <hr></hr>
         </div>
     )
