@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Joke from './Joke'
+import jokesData from './jokesData'
 function App() {
+  const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const doubled = nums.map(function(num){
+    return num * 2
+  })
+  console.log(doubled)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>{doubled}</h1>
+        <Joke/>
+        <Joke/>
+        <Joke/>
     </div>
   );
 }
